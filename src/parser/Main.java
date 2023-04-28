@@ -10,7 +10,6 @@ public class Main {
             "-a^2",
             "3*4+5/6",
             "b^-2",
-            "3=2"
        };
 
        for(String testeString : testStrings) {
