@@ -48,7 +48,8 @@ public class Parser implements IParser {
         for (int i = lookahead - 1; i >= 0 && input.charAt(i) != '\n'; i--) {
             col--;
         }
-        System.out.println(msg + " at column " + col);
+        System.out.println(msg + " " + "\ncoluna: " + col);
+        System.exit(0);
     }
 
     private boolean expr() {
