@@ -10,7 +10,7 @@ public class Parser implements IParser {
         lookahead = 0;
         boolean result = expr();
         if (lookahead != input.length()) {
-            error("caractere desconhecido: " + lookahead());
+            error("\n|String inválida: "+ this.input +" |caractere desconhecido: " + lookahead());
         }
         return result;
     }
@@ -38,7 +38,7 @@ public class Parser implements IParser {
         if (lookahead() == c) {
             next();
         } else {
-            error("Expected " + c + ", found " + lookahead());
+            error("Expected " + c + ", found ");
         }
     }
 
@@ -48,7 +48,7 @@ public class Parser implements IParser {
         for (int i = lookahead - 1; i >= 0 && input.charAt(i) != '\n'; i--) {
             col--;
         }
-        System.out.println(msg + " " + "\ncoluna: " + col);
+        System.out.println(msg +" |Erro na coluna: " + col+"|");
         System.exit(0);
     }
 

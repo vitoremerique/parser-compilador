@@ -10,11 +10,13 @@ public class Main {
             "-a^2",
             "3*4+5/6",
             "b^-2",
+            "B+3*5^3^6+0_",
        };
 
        for(String testeString : testStrings) {
-            if(parser.parse(testeString)) 
-                System.out.println("String "+ testeString +" is valid");
+            if(parser.parse(testeString)){ 
+                System.out.println("String "+ testeString +" é valido");
+            }       
        }
     }
 }
