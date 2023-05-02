@@ -20,7 +20,7 @@
      ID ::= a | b | ... | z
      DIGIT ::= 0 | 1 | ... | 9
 ```
-## Implementação na línguagem de programação ##
+## Implementação na linguagem de programação ##
 
  - No diretório **src\parser\IParser.java** encontra-se a interface do parser com nome **Iparser** .
 
