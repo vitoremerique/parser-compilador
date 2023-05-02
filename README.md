@@ -41,6 +41,33 @@
     - cada caracter dessa palavra será passada de acordo com a gramática, caso não aceite ela não é exibida.
     - Como regra a arvore inicia como expr no construtor, caso a string seja aceita a arvore é completada.
 
+
+## Como executar o programa
+- No arquivo Main.java insira no vetor as palavra que queira testar.
+```java
+package parser;
+
+public class Main {
+    public static void main(String[] args) {
+       IParser parser = new Parser();
+
+       String[] testStrings = {
+            '''Insira aqui as palavras na inserção de vetor do tipo String, logo após execute!
+            
+               exemplo -> a+b*c-d ou b^-2'''
+       };
+
+       for(String testeString : testStrings) {
+            if(parser.parse(testeString)){ 
+                System.out.println("String "+ testeString +" é valido");
+            }       
+       }
+    }
+}
+
+
+```
+
  
  
 
